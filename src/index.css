@@ -1,0 +1,877 @@
+body {
+  margin: 0;
+ 
+  
+}
+.header{
+  display: flex;
+  background-color: #2d74ff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#dropDown{
+  padding: 0;
+}
+#cartIMG{
+  position: relative;
+  height: 25px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+#cartPnum{
+  font-family: 'Noto Sans', sans-serif;
+  position: absolute; top:10px;
+  border-radius: 2px;
+  color: white;
+  font-size: 11px;
+  height: 15px;
+  width: 15px;
+  background-color: red;
+
+}
+#coverP{
+  
+  width: 50%;
+  font-size: 50px;
+  font-weight: bold;
+  color: #2d74ff;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.websiteCover{
+  display: flex;
+  align-items: center;
+  font-family: 'Noto Sans', sans-serif;
+}
+#coverImg{
+  width: 50%;
+  padding: 30px;
+  box-sizing: border-box;
+
+}
+#coverP1{
+  margin-left: 40px;
+  box-sizing: border-box;
+}
+#coverP2{
+  margin-left: 120px;
+  box-sizing: border-box;
+}
+#coverP3{
+  margin-left: 170px;
+  box-sizing: border-box;
+}
+.products{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.error{
+  color: #db0054;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  margin: 100px;
+  box-sizing: border-box;
+}
+#listOfProducts{
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px rgb(191, 191, 191);
+  color: #20c562;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  font-weight: bold;
+  width: 80%;
+  border-radius: 2px;
+}
+.ProductCard{
+  cursor: pointer;
+  height: 310px;
+  width: 200px;
+  box-shadow: 0 0 10px rgb(169, 169, 169);
+  border-radius: 2px;
+}
+.ProductCard:hover{
+  background-color: #2d74ff;
+  color: white;
+}
+.ProductCardImg{
+  width: 100%;
+  box-sizing: border-box;
+}
+.imgContainer{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.rateSection{
+  display: flex;
+  font-weight: bold;
+  gap: 5px;
+  padding: 6px;
+  height: 35px;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+.categoryName{
+  height: 20px;
+  font-size: 13px;
+  color: gray;
+  margin: 0;
+  padding-left: 6px;
+  font-family: 'Noto Sans', sans-serif;
+}
+.NameOfProduct{
+  height: 45px;
+  margin: 0;
+  font-size: 15px;
+  font-family: 'Noto Sans', sans-serif;
+  padding-left: 6px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.Price{
+  height: 35px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #db0054;
+  padding-top: 6px;
+  padding-left: 6px;
+  padding-bottom: 6px;
+  box-sizing: border-box;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Footer{
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #2d74ff;
+  color: white;
+  height: 200px;
+  display: flex;
+}
+.contactUs{
+  margin-left: 100px;
+  margin-right: auto;
+}
+#contactUs{
+  margin: 0;
+  padding-top: 20px;
+}
+#contactUsEmail{
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+#contactUsPhone{
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+#footerImg{
+  height: 190px;
+  margin: 10px;
+}
+#searchBar{
+  width: 180px;
+  height: 30px;
+  border: 1px solid rgb(209, 209, 209);
+
+  appearance: none;
+  font-family: 'Noto Sans', sans-serif;
+}
+#searchBar::placeholder
+    {   
+      padding-left: 10px;
+      color: rgb(209, 209, 209);
+    }
+#searchBar:focus {outline:none!important;}
+
+.productPage{
+
+  display: flex;
+  justify-content: center;
+}
+
+.productInfo{
+  font-family: 'Noto Sans', sans-serif;
+  width: 65%;
+  margin: 100px 0px 200px 0px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+}
+.name{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: white;
+  background-color: #2d74ff;
+  box-shadow: 0 0 10px rgb(163, 163, 163);
+  padding: 10px 20px;
+  font-size: 30px;
+  font-weight: bolder;
+  box-sizing: border-box;
+  margin: 0;
+}
+.imgOfProduct{
+  width: 100%;
+  box-shadow: 0 0 10px rgb(163, 163, 163);
+
+}
+.detailOfProduct
+.imgOfProduct{
+  width: 100%;
+  box-shadow: 0 0 10px rgb(163, 163, 163);
+}
+.brand{
+  font-size: 50px;
+  font-weight: bolder;
+  padding-left: 10px;
+}
+.infoName{
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.description{
+  height: 140px;
+  overflow: auto;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.numberOfReviews{
+  font-weight: bold;
+  padding-left: 10px;
+  margin: 10px 0px;
+}
+.priceSection
+.addToCartButtonContainer{
+
+  display: flex;
+  justify-content: center;
+}
+.addToCartButton{
+  font-family: 'Noto Sans', sans-serif;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 100px;
+  border: none;
+  background-color: #db0054;
+  color: white;
+  box-shadow: 0 0 20px rgb(163, 163, 163);
+}
+.addToCartButton:active{
+  background-color: white;
+  color: #db0054;
+}
+.addToCartButtonDisable{
+  font-family: 'Noto Sans', sans-serif;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 100px;
+  padding-right: 35px;
+  border: none;
+  background-color: gray;
+  color: white;
+  box-shadow: 0 0 20px rgb(163, 163, 163);
+}
+.addToCartButtonDisable:active{
+  background-color: white;
+  color: gray;
+}
+.buttonText{
+  margin-left: 20px;
+  margin-bottom: 0;
+  font-weight: bolder;
+}
+.cart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Noto Sans', sans-serif;
+  margin: 100px 0px;
+  gap: 50px;
+}
+.cartItems{
+  width: 70%;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  box-shadow: 0 0 20px gray;
+}
+.cartImg{
+  height: 130px;
+  margin: 15px;
+}
+.cartName{
+  font-size: 25px;
+  font-weight: bold;
+  height: 70%;
+  overflow-y: auto;
+  margin-bottom: 5px;
+}
+.cartNamePrice{
+  margin-right: auto;
+  height: 80%;
+}
+.cartQuantity{
+
+  font-size: 50px;
+  background-image: linear-gradient(to bottom right,rgb(239, 239, 239),rgb(242, 242, 242));
+  padding: 15px 25px;
+  box-sizing: border-box;
+  font-weight: bolder;
+  border-radius: 2px;
+  margin: 0px 10px;
+  box-sizing: border-box;
+}
+.cartIncDecBtn{
+  height: 50px;
+  cursor: pointer;
+  margin: 20px;
+}
+.Quantity{
+  display: flex;
+  align-items: center;
+  margin: 30px 0px;
+}
+.NextTotal{
+  display: flex;
+  gap: 180px;
+  align-items: center;
+}
+.cartEmpty{
+  font-size: 70px;
+  color: rgb(202, 202, 202);
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bolder;
+  margin-bottom: 200px;
+}
+.NotFound{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px 0px;
+}
+.pageEmpty{
+  font-size: 70px;
+  text-align: center;
+  color: rgb(202, 202, 202);
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.productError{
+  font-weight: bolder;
+  color: #db0054;
+  margin: 200px 0px;
+}
+.loginPage{
+  display: flex;
+  justify-content: center;
+  margin: 130px 0px;
+}
+.loginHeader{
+  width: 30vw;
+  /*alireza sedighi*/
+  color: white;
+  background-color: #2d74ff;
+  padding: 10px 20px;
+  font-size: 30px;
+  font-weight: bolder;
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 2px 2px 0 0;
+}
+.loginContainer{
+  background-color: white;
+  font-family: 'Noto Sans', sans-serif;
+  width: 30vw;
+  border-radius: 2px;
+  box-shadow: 0 0 30px rgb(123, 123, 123);
+}
+.emailPassLogin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.emailPassInput{
+  width: 80%;
+  height: 30px;
+  font-family: 'Noto Sans', sans-serif;
+  border: 2px solid #2d74ff;
+  border-radius: 3px;
+}
+.emailPassInput:focus{
+  outline: none!important;
+  background-color: #dedede;
+}
+.loginEmail{
+  width: 80%;
+  margin: 20px 0px 5px 20px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.signinLogin{
+  font-family: 'Noto Sans', sans-serif;
+  margin: 20px 30px;
+  margin-right: auto;
+}
+.loginButton{
+  font-family: 'Noto Sans', sans-serif;
+  margin: 30px 40px;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 100px;
+  border: none;
+  background-color: #2d74ff;
+  color: white;
+  box-shadow: 0 0 20px rgb(163, 163, 163);
+}
+.loginButton:active{
+  background-color: white;
+  color: #2d74ff;
+}
+.ErrorCause{
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #db0054;
+}
+#navEmail{
+  color: white;
+  text-decoration: none;
+  padding: 0;
+}
+#navDropDown{
+  color: #db0054;
+  font-weight: bolder;
+  padding: 4px 16px;
+  font-size: 16px;
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+}
+#changePassword{
+  width: 100%;
+  color: #2d74ff;
+  font-weight: bolder;
+  padding: 4px 16px;
+  font-size: 16px;
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+}
+.inputError{
+  color: #db0054;
+  font-size: 18px;
+  width: 80%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #2d74ff;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2d74ff;
+}
+
+.orderInfo{
+  width: 50vw;
+  background-color: white;
+  box-shadow: 0 0 20px rgb(163, 163, 163);
+  border-radius: 2px;
+  margin: 150px 0px;
+}
+.finalOrderHeader{
+  background-color: #2d74ff;
+  padding: 10px;
+  color: white;
+  font-weight: bolder;
+  font-family: 'Noto Sans', sans-serif;
+  box-sizing: border-box;
+  border-radius: 2px 2px 0px 0px;
+}
+.finalOrderitems{
+  width: 95%;
+  background-color: gainsboro;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  
+}
+.orderInformations{
+  width: 95%;
+}
+.finalOrderImg{
+  width: 40%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.orderQty{
+  font-size: 15px;
+  box-sizing: border-box;
+  margin: 10px 5px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bolder;
+  border-radius: 2px;
+}
+.priceAndQty{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.orderName{
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px;
+  font-family: 'Noto Sans', sans-serif;
+}
+.orderCity{
+  font-family: 'Noto Sans', sans-serif;
+  background-color: gainsboro;
+  padding: 10px 5px;
+  font-size: 15px;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.orderButtons{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 35px 0px;
+}
+.orderInfoButton{
+  width: 25%;
+  color: white;
+  background-color: #2d74ff;
+  border-radius: 50px;
+  font-family: 'Noto Sans', sans-serif;
+  border: none;
+  padding: 10px;
+  box-shadow: 0 0 20px rgb(163, 163, 163);
+  font-weight: bold;
+}
+.orderInfoButton:active{
+  color: #2d74ff;
+  background-color: white;
+}
+.successOrder{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin: 130px 0px;
+}
+.successOrderImg{
+  width: 80%;
+}
+.successOrderNote{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Noto Sans', sans-serif;
+  color: #20c562;
+  font-weight: bolder;
+}
+#failedOrder{
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  color: #db0054;
+  font-weight: bolder;
+}
+.failedOrder{
+  text-align: center;
+  margin: 200px 0px;
+}
+.loadingOrder{
+  margin: 130px 0px;
+}
+.ordersHeader{
+  width: 90%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: 'Noto Sans', sans-serif;
+  margin-top: 80px;
+}
+.ordersList{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.orderContainer{
+  cursor: pointer;
+  height: 300px;
+  width: 200px;
+  box-shadow: 0 0 10px rgb(169, 169, 169);
+  border-radius: 5px;
+}
+.orderContainer:hover{
+  background-color: rgb(193, 193, 193);
+}
+.orderImg{
+  height: 100%;  
+  padding: 10px;
+  box-sizing: border-box;
+}
+.orderInfos{
+  height: 30px;
+  margin: 0;
+  font-weight: bolder;
+  font-family: 'Noto Sans', sans-serif;
+  padding-left: 10px;
+
+}
+
+.totalP{
+  font-size: 35px;
+  width: 500px;
+  margin: 0;
+  font-weight: bolder;
+  color: #db0054;
+  padding-top: 6px;
+  padding-left: 6px;
+  padding-bottom: 6px;
+  box-sizing: border-box;
+}
+.alert{
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: #20c562;
+}
+.alertF{
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: #db0054;
+}
+
+@media only screen and (max-width: 800px) {
+  #coverP{
+    font-size: 40px;
+    padding: 10px;
+  }
+  #coverImg{
+    width: 100%;
+  }
+  .websiteCover{
+    flex-direction: column-reverse;
+  }
+  #coverP1{
+    margin-left: 10px;
+    box-sizing: border-box;
+  }
+  #coverP2{
+    margin-left: 30px;
+    box-sizing: border-box;
+  }
+  #coverP3{
+    margin-left: 30px;
+    box-sizing: border-box;
+  }
+  #coverP{
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .Footer{
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactUs{
+    margin-left: 30px;
+  }
+  #contactUs{
+    margin: 0;
+    padding-top: 20px;
+  }
+  #contactUsEmail{
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 0px;
+  }
+  #contactUsPhone{
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 0px;
+  }
+  #footerImg{
+    height: 300px;
+    margin: 30px;
+  }
+  .products{
+    display: grid;
+    grid-template-columns: auto ;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #listOfProducts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .productInfo{
+    font-family: 'Noto Sans', sans-serif;
+    width: 100%;
+    margin: 100px 10px 200px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .name{
+    margin: 10px;
+  }
+  .imgOfProduct{
+    width: 90%;
+    box-shadow: 0 0 10px rgb(163, 163, 163);
+    margin: 20px 0px;
+  }
+  .detailOfProduct{
+    margin: 20px 0px;
+  }
+  .priceSection{
+    width: 95%;
+  }
+  .numberOfReviews{
+    margin: 10px 0px;
+    font-size: 18px;
+  }
+  .Price{
+    font-size: 20px;
+  }
+  .cartItems{
+    width: 70%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2px;
+    box-shadow: 0 0 20px gray;
+  }
+  .cartImg{
+    width: 90%;
+    height: auto;
+    margin: 15px;
+  }
+  .cartNamePrice{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    height: 200px;
+  }
+  .cartName{
+    font-size: 25px;
+  }
+  .Quantity{
+    margin: 10px 0px;
+  }
+  .NextTotal{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .cartEmpty{
+    font-size: 30px;
+  }
+  .loginContainer{
+    width: 80vw;
+  }
+  .loginHeader{
+    width: 80vw;
+  }
+  .loginButton{
+    margin: 20px 10px;
+  }
+  .orderInfo{
+    width: 90vw;
+  }
+  .finalOrderitems{
+    width: 95%;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+  }
+  .finalOrderImg{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .priceAndQty{
+    width: 100%;
+    padding-left: 10px;
+  }
+  .orderQty{
+    font-size: 20px;
+  }
+  .orderName{
+    font-size: 20px;
+  }
+  .orderCity{
+    font-size: 18px;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+  .ordersList{
+    grid-template-columns: auto ;
+  }
+  .totalP{
+    width: auto;
+    text-align: center;
+    height: 80px;
+  }
+}
